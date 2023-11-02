@@ -1,0 +1,156 @@
+.choose-us {
+
+    .container-fluid {
+
+        @media (min-width: 1920px) {
+            max-width: 1820px;
+        }
+
+        .reasons-why {
+            display: grid;
+            column-gap: 10px;
+            row-gap: 30px;
+            grid-template-columns: auto;
+            grid-template-areas:    "titel"
+                                    "reason1"
+                                    "reason2"
+                                    "reason3"
+                                    "reason4";
+
+            @media (min-width: 768px) {
+                row-gap: 0px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:    "titel titel"
+                                        "reason1 reason2"
+                                        "reason3 reason4";
+            }
+
+
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 700px;
+                grid-template-areas:    "titel image1"
+                                        "reason1 image1"
+                                        "reason2 image1"
+                                        "reason3 image1"
+                                        "reason4 image1";
+            }
+
+            @media (min-width: 1400px) {
+                grid-template-columns: 1fr 1000px;
+            }
+
+            .section-titel {
+                grid-area: titel;
+
+                @media (min-width: 1200px) {
+                    width: 400px;
+                    margin-left: 240px;
+                    margin-right: 200px;
+                }
+            }
+
+            .reason-1,
+            .reason-2,
+            .reason-3,
+            .reason-4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    padding-bottom: 40px;
+                }
+
+                @media (min-width: 1200px) {
+                    flex-direction: row;
+                    text-align: start;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                    padding: 5px;
+                    border-radius: 100%;
+                    border: 1px solid #D1D1D1;
+                    transition: box-shadow 0.2s ease-in-out;
+                    box-shadow: 7px 7px 7px 2px #8a898986;
+
+                    @media (min-width: 1200px) {
+                        margin: 0px 20px 20px 0px;
+                    }
+
+                    &:hover {
+                        box-shadow: 3px 3px 3px 2px #8a898986;
+                        border-color: #F2CF80;
+                    }
+                }
+
+            }
+
+            .reason-1 {
+                grid-area: reason1;
+            }
+
+            .reason-2 {
+                grid-area: reason2;
+            }
+
+            .reason-3 {
+                grid-area: reason3;
+            }
+
+            .reason-4 {
+                grid-area: reason4;
+                padding-bottom: 90px;
+
+                @media (min-width: 768px) {
+                    padding-bottom: 40px;
+                }
+            }
+
+            .content-img {
+                grid-area: image1;
+                display: none;
+                position: relative;
+                z-index: 0;
+                background-color: #F0EFE9;
+
+                @media (min-width: 1200px) {
+                    display: block;
+                    grid-row: 2 / 6;
+                    margin-bottom: 40px;
+                    margin-right: 10px;
+                }
+
+
+                .img-fluid {
+                    display: none;
+
+                    @media (min-width: 1200px) {
+                        display: block;
+                        position: absolute;
+                        z-index: 1;
+                        left: 0px;
+                        bottom: 100px;
+
+                    }
+
+                    @media (min-width: 1400px) {
+                        margin-right: 80px;
+                        left: 100px;
+                        bottom: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

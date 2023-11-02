@@ -1,0 +1,195 @@
+.about-company {
+
+    .container {
+        gap: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:    "titel"
+                                "company-content";
+
+        @media (min-width: 1200px) {
+            text-align: start;
+            padding-top: 120px;
+            column-gap: 100px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:    "founder titel"
+                                    "founder company-content";
+        }
+
+        @media (min-width: 1400px) {
+            row-gap: 50px;
+            column-gap: 120px;
+        }
+
+        .section-titel {
+            grid-area: titel;
+            grid-row: 1/2;
+
+            @media (min-width: 1200px) {
+                padding: 0px 0px 30px;
+                max-width: 500px;
+            }
+
+        }
+
+        .about-founder {
+            grid-area: founder;
+            grid-row: 1 /4;
+            display: none;
+
+
+            @media (min-width: 1200px) {
+                position: relative;
+                display: block;
+            }
+
+            .image-samantha {
+
+                &:hover+.info-samantha {
+                    display: block;
+                }
+            }
+
+            .info-samantha {
+                position: absolute;
+                background-color: #BEEBFF;
+                color: #000000;
+                left: -30px;
+                top: 450px;
+                display: none;
+                padding: 20px;
+
+
+
+                .info-samantha-text {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    p {
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 20px;
+                        padding-right: 5px;
+                    }
+
+                    h2 {
+                        color: #F94D1C;
+                        font-size: 16px;
+                        padding-bottom: 5px;
+                    }
+                }
+
+                blockquote {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+            }
+        }
+
+        .about-company-content {
+            grid-area: company-content;
+            grid-row: 2/4;
+            padding-bottom: 90px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            @media (min-width: 768px) {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            @media (min-width: 992px) {
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+
+            @media (min-width: 1200px) {
+                padding: 0;
+                text-align: start;
+            }
+
+            p {
+                padding-bottom: 30px;
+
+                @media (min-width: 1200px) {
+                    padding-bottom: 40px;
+                    width: 500px;
+                }
+
+            }
+
+            .company-info {
+
+                @media (min-width: 768px) {
+                    margin: 20px 0px 90px;
+                }
+
+                .btn-black {
+                    a {
+                        display: block;
+                        border: none;
+                        background-color: #000000;
+                        color: #ffff;
+                        text-align: center;
+
+                        @media (min-width: 576px) {
+                            display: inline;
+                        }
+
+                        &:hover {
+                            background-color: #F2CF80;
+                            color: #000000;
+                        }
+                    }
+                }
+
+                .btn-intro-vid {
+                    display: none;
+                    background-color: white;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    margin: 30px;
+                    padding: 12px;
+                    transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+                    box-shadow: 7px 7px 7px 2px #8a898986;
+
+                    i {
+                        margin: 5px;
+                    }
+
+
+                    @media (min-width: 576px) {
+                        display: inline;
+
+                    }
+
+                    @media (min-width: 1400px) {
+                        margin-left: 1rem;
+                    }
+
+                    &:hover {
+                        background-color: #000000;
+                        box-shadow: 3px 3px 3px 2px #8a898986;
+                        cursor: pointer;
+
+                        i {
+                            color: #f0efe9;
+                        }
+                    }
+                }
+
+                p {
+                    display: none;
+
+                    @media (min-width: 576px) {
+                        display: inline;
+                        margin-left: -20px;
+                    }
+                }
+            }
+
+        }
+    }
+}

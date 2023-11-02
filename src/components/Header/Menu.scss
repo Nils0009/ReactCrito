@@ -1,0 +1,41 @@
+.menu {
+    grid-area: menu;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #DAD9D3;
+    margin-top: 10px;
+    padding-top: 10px;
+
+    @media (min-width: 992px) {
+        display: flex;
+    }
+
+    nav {
+
+        a {
+            display: inline-block;
+            color: #191919;
+            text-decoration: none;
+            margin-right: 40px;
+            position: relative;
+
+            &.active {
+                font-weight: 500;
+            }
+
+            &.active::after,
+            &:hover::after {
+                content: '';
+                position: absolute;
+                font-weight: 500;
+                height: 2px;
+                width: 15px;
+                background-color: #191919;
+                left: 50%;
+                bottom: -3px;
+                transform: translate((calc(50% - 15px)));
+            }
+        }
+    }
+}

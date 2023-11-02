@@ -1,0 +1,32 @@
+.advertisement {
+
+    .container {
+
+        .advertisment-content {
+            display: none;
+
+            @media (min-width: 1200px) {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                padding-top: 90px;
+                padding-bottom: 90px;
+
+                a {
+                    transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+                    box-shadow: 7px 7px 7px 2px #8a898986;
+                    margin: 20px;
+                }
+
+                img {
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.5);
+                        border: 1px solid #D1D1D1;
+                    }
+                }
+            }
+        }
+    }
+}

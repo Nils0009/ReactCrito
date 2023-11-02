@@ -1,0 +1,190 @@
+.services {
+    background-color: #F0EFE9;
+    text-align: center;
+
+    .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto;
+        grid-template-areas:    "consulting consulting"
+                                "btn btn";
+
+        @media (min-width: 576px) {
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 5px;
+            grid-template-columns: auto auto;
+            grid-template-areas:    "consulting consulting"
+                                    "business startup"
+                                    "financial risk"
+                                    "btn btn";
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: auto auto;
+            grid-template-areas:    "consulting consulting"
+                                    "business startup"
+                                    "financial risk"
+                                    "btn btn";
+        }
+
+        @media (min-width: 992px) {
+            column-gap: 10px;
+            padding: 20px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:    "consulting consulting consulting consulting"
+                                    "business startup financial risk"
+                                    "btn btn btn btn";
+        }
+
+        .more-info {
+            float: right;
+            border-radius: 50px;
+            border: 10px solid black;
+            margin: 10px;
+            margin-top: 30px;
+            float: right;
+            background-color: black;
+            transition: box-shadow 0.2s ease-in-out;
+            box-shadow: 7px 7px 7px 2px #8a898986;
+
+            i {
+                color: white;
+            }
+
+            &:hover {
+                background-color: white;
+                border: 10px solid white;
+                box-shadow: 3px 3px 5px 2px #5f5f5f86;
+
+                i {
+                    color: black;
+                }
+            }
+
+        }
+
+        .section-titel {
+            grid-area: consulting;
+
+            @media (min-width: 1200px) {
+                grid-column: 1 / 3;
+                padding-right: 80px;
+            }
+        }
+
+        .center-btn {
+            border: none;
+            grid-area: btn;
+            margin-top: 50px;
+            margin-bottom: 90px;
+
+            a {
+                background-color: transparent;
+                border: 1px solid black;
+                display: block;
+
+                &:hover {
+                    background-color: #F2CF80;
+                    color: #191919;
+                }
+            }
+        }
+
+        .consulting-business {
+            background-color: #ffffff;
+            grid-area: business;
+            display: none;
+            padding: 70px 15px 30px;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 7px 7px 7px 2px #8a898986;
+
+            &:hover {
+                background-color: #F2CF80;
+                box-shadow: 3px 3px 3px 2px #8a898986;
+            }
+
+            @media (min-width: 576px) {
+                display: block;
+            }
+
+            h3 {
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .consulting-startup {
+            background-color: #ffffff;
+            grid-area: startup;
+            display: none;
+            padding: 70px 15px 30px;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 7px 7px 7px 2px #8a898986;
+
+            &:hover {
+                background-color: #F2CF80;
+                box-shadow: 3px 3px 3px 2px #8a898986;
+            }
+
+            @media (min-width: 576px) {
+                display: block;
+            }
+
+            h3 {
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .consulting-financial {
+            background-color: #ffffff;
+            grid-area: financial;
+            display: none;
+            padding: 70px 15px 30px;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 7px 7px 7px 2px #8a898986;
+
+            &:hover {
+                background-color: #F2CF80;
+                box-shadow: 3px 3px 3px 2px #8a898986;
+            }
+
+            @media (min-width: 576px) {
+                display: block;
+            }
+
+            h3 {
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .consulting-risk {
+            background-color: #ffffff;
+            grid-area: risk;
+            display: none;
+            padding: 70px 15px 30px;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 7px 7px 7px 2px #8a898986;
+
+            &:hover {
+                background-color: #F2CF80;
+                box-shadow: 3px 3px 3px 2px #8a898986;
+            }
+
+            @media (min-width: 576px) {
+                display: block;
+            }
+
+            h3 {
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}

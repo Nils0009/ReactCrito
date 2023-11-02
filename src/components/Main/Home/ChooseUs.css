@@ -1,0 +1,156 @@
+@media (min-width: 1920px) {
+  .choose-us .container-fluid {
+    max-width: 1820px;
+  }
+}
+.choose-us .container-fluid .reasons-why {
+  display: grid;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 30px;
+  grid-template-columns: auto;
+  grid-template-areas: "titel" "reason1" "reason2" "reason3" "reason4";
+}
+@media (min-width: 768px) {
+  .choose-us .container-fluid .reasons-why {
+    row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titel titel" "reason1 reason2" "reason3 reason4";
+  }
+}
+@media (min-width: 1200px) {
+  .choose-us .container-fluid .reasons-why {
+    grid-template-columns: 1fr 700px;
+    grid-template-areas: "titel image1" "reason1 image1" "reason2 image1" "reason3 image1" "reason4 image1";
+  }
+}
+@media (min-width: 1400px) {
+  .choose-us .container-fluid .reasons-why {
+    grid-template-columns: 1fr 1000px;
+  }
+}
+.choose-us .container-fluid .reasons-why .section-titel {
+  grid-area: titel;
+}
+@media (min-width: 1200px) {
+  .choose-us .container-fluid .reasons-why .section-titel {
+    width: 400px;
+    margin-left: 240px;
+    margin-right: 200px;
+  }
+}
+.choose-us .container-fluid .reasons-why .reason-1,
+.choose-us .container-fluid .reasons-why .reason-2,
+.choose-us .container-fluid .reasons-why .reason-3,
+.choose-us .container-fluid .reasons-why .reason-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .choose-us .container-fluid .reasons-why .reason-1,
+  .choose-us .container-fluid .reasons-why .reason-2,
+  .choose-us .container-fluid .reasons-why .reason-3,
+  .choose-us .container-fluid .reasons-why .reason-4 {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .choose-us .container-fluid .reasons-why .reason-1,
+  .choose-us .container-fluid .reasons-why .reason-2,
+  .choose-us .container-fluid .reasons-why .reason-3,
+  .choose-us .container-fluid .reasons-why .reason-4 {
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.choose-us .container-fluid .reasons-why .reason-1 h3,
+.choose-us .container-fluid .reasons-why .reason-2 h3,
+.choose-us .container-fluid .reasons-why .reason-3 h3,
+.choose-us .container-fluid .reasons-why .reason-4 h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.choose-us .container-fluid .reasons-why .reason-1 img,
+.choose-us .container-fluid .reasons-why .reason-2 img,
+.choose-us .container-fluid .reasons-why .reason-3 img,
+.choose-us .container-fluid .reasons-why .reason-4 img {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 100%;
+  border: 1px solid #D1D1D1;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
+}
+@media (min-width: 1200px) {
+  .choose-us .container-fluid .reasons-why .reason-1 img,
+  .choose-us .container-fluid .reasons-why .reason-2 img,
+  .choose-us .container-fluid .reasons-why .reason-3 img,
+  .choose-us .container-fluid .reasons-why .reason-4 img {
+    margin: 0px 20px 20px 0px;
+  }
+}
+.choose-us .container-fluid .reasons-why .reason-1 img:hover,
+.choose-us .container-fluid .reasons-why .reason-2 img:hover,
+.choose-us .container-fluid .reasons-why .reason-3 img:hover,
+.choose-us .container-fluid .reasons-why .reason-4 img:hover {
+  box-shadow: 3px 3px 3px 2px rgba(138, 137, 137, 0.5254901961);
+  border-color: #F2CF80;
+}
+.choose-us .container-fluid .reasons-why .reason-1 {
+  grid-area: reason1;
+}
+.choose-us .container-fluid .reasons-why .reason-2 {
+  grid-area: reason2;
+}
+.choose-us .container-fluid .reasons-why .reason-3 {
+  grid-area: reason3;
+}
+.choose-us .container-fluid .reasons-why .reason-4 {
+  grid-area: reason4;
+  padding-bottom: 90px;
+}
+@media (min-width: 768px) {
+  .choose-us .container-fluid .reasons-why .reason-4 {
+    padding-bottom: 40px;
+  }
+}
+.choose-us .container-fluid .reasons-why .content-img {
+  grid-area: image1;
+  display: none;
+  position: relative;
+  z-index: 0;
+  background-color: #F0EFE9;
+}
+@media (min-width: 1200px) {
+  .choose-us .container-fluid .reasons-why .content-img {
+    display: block;
+    grid-row: 2/6;
+    margin-bottom: 40px;
+    margin-right: 10px;
+  }
+}
+.choose-us .container-fluid .reasons-why .content-img .img-fluid {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .choose-us .container-fluid .reasons-why .content-img .img-fluid {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    bottom: 100px;
+  }
+}
+@media (min-width: 1400px) {
+  .choose-us .container-fluid .reasons-why .content-img .img-fluid {
+    margin-right: 80px;
+    left: 100px;
+    bottom: 100px;
+  }
+}

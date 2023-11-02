@@ -1,0 +1,24 @@
+.advertisement .container .advertisment-content {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .advertisement .container .advertisment-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .advertisement .container .advertisment-content a {
+    transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
+    margin: 20px;
+  }
+  .advertisement .container .advertisment-content img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .advertisement .container .advertisment-content img:hover {
+    transform: scale(1.5);
+    border: 1px solid #D1D1D1;
+  }
+}
