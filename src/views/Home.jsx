@@ -7,6 +7,10 @@ import Services from '../components/Main/Home/Services'
 import Features from '../components/Main/Home/Features'
 import AboutCompany from '../components/Main/Home/AboutCompany'
 import ChooseUs from '../components/Main/Home/ChooseUs'
+import Projects from '../components/Main/Home/Projects'
+import MeetTeam from '../components/Main/Home/MeetTeam'
+import ArticleNews from '../components/Main/Home/ArticleNews'
+import Signup from '../components/Main/Home/Signup'
 
 const Home = () => {
   return (
@@ -18,6 +22,10 @@ const Home = () => {
       <AboutCompany />
       <Services />
       <ChooseUs />
+      <Projects />
+      <MeetTeam />
+      <ArticleNews />
+      <Signup />
       <Footer />
     </>
   )

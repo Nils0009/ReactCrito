@@ -1,0 +1,261 @@
+.meet-team {
+  background-color: #F2CF80;
+  padding-bottom: 100px;
+}
+.meet-team .container .meet-team-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 998px) {
+  .meet-team .container .meet-team-top {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.meet-team .container .meet-team-top a {
+  border: 1px solid black;
+  background-color: #ffd678;
+  margin-bottom: 20px;
+}
+@media (min-width: 998px) {
+  .meet-team .container .meet-team-top a {
+    margin-bottom: 0;
+    margin-top: 120px;
+  }
+}
+.meet-team .container .meet-team-top .section-titel {
+  padding-bottom: 30px;
+}
+.meet-team .container .team-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.meet-team .container .team-members img {
+  padding-bottom: 20px;
+}
+.meet-team .container .team-members h3 {
+  font-family: "DM", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.meet-team .container .team-members .mark-a {
+  display: none;
+}
+@media (min-width: 998px) {
+  .meet-team .container .team-members .mark-a {
+    display: block;
+  }
+}
+.meet-team .container .team-members .justin-w {
+  display: none;
+}
+@media (min-width: 768px) {
+  .meet-team .container .team-members .justin-w {
+    display: block;
+  }
+}
+.meet-team .container .dot-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.meet-team .container .testimonial {
+  background-color: #ffffff;
+  margin-top: 70px;
+  padding: 20px 50px 30px;
+}
+@media (min-width: 768px) {
+  .meet-team .container .testimonial {
+    padding: 20px 20px 100px;
+  }
+}
+@media (min-width: 992px) {
+  .meet-team .container .testimonial {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.meet-team .container .testimonial .testimonial-text {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "titel" "rev-1" "cassandra";
+}
+@media (min-width: 768px) {
+  .meet-team .container .testimonial .testimonial-text {
+    text-align: left;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titel titel" "rev-1 rev-2" "cassandra amanda";
+  }
+}
+@media (min-width: 1200px) {
+  .meet-team .container .testimonial .testimonial-text {
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "titel titel titel" "rev-1 rev-2 rev-3" "cassandra amanda jack";
+  }
+}
+.meet-team .container .testimonial .testimonial-text .section-titel {
+  grid-area: titel;
+  text-align: center;
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 {
+  grid-area: rev-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px 50px;
+}
+@media (min-width: 768px) {
+  .meet-team .container .testimonial .testimonial-text .rev-1 {
+    padding: 20px 10px 50px;
+    align-items: start;
+  }
+}
+@media (min-width: 998px) {
+  .meet-team .container .testimonial .testimonial-text .rev-1 {
+    padding: 20px 0px 50px;
+  }
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 img {
+  padding-bottom: 15px;
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 .cassandra {
+  grid-area: cassandra;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 .cassandra h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (min-width: 1400px) {
+  .meet-team .container .testimonial .testimonial-text .rev-1 .cassandra h3 {
+    font-size: 20px;
+  }
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 .cassandra p {
+  color: #F94D1C;
+  font-size: 12px;
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 .cassandra img {
+  padding-right: 10px;
+}
+.meet-team .container .testimonial .testimonial-text .rev-1 .cassandra .cassandra-text {
+  padding-top: 15px;
+}
+@media (min-width: 768px) {
+  .meet-team .container .testimonial .testimonial-text .rev-1 .cassandra {
+    padding-top: 20px;
+    justify-content: start;
+  }
+}
+.meet-team .container .testimonial .testimonial-text .rev-2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .meet-team .container .testimonial .testimonial-text .rev-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    grid-area: rev-2;
+    padding: 20px 10px 50px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-2 img {
+    padding-bottom: 15px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-2 .amanda {
+    grid-area: amanda;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-2 .amanda h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 768px) and (min-width: 1400px) {
+  .meet-team .container .testimonial .testimonial-text .rev-2 .amanda h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .meet-team .container .testimonial .testimonial-text .rev-2 .amanda p {
+    color: #F94D1C;
+    font-size: 12px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-2 .amanda img {
+    padding-right: 10px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-2 .amanda .amanda-text {
+    padding-top: 15px;
+  }
+}
+@media (min-width: 998px) {
+  .meet-team .container .testimonial .testimonial-text .rev-2 {
+    padding: 20px 0px 50px;
+  }
+}
+.meet-team .container .testimonial .testimonial-text .rev-3 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .testimonial .testimonial-text .rev-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    grid-area: rev-3;
+    padding: 20px 0px 50px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-3 img {
+    padding-bottom: 15px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-3 .jack {
+    grid-area: jack;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-3 .jack h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1400px) {
+  .meet-team .container .testimonial .testimonial-text .rev-3 .jack h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .meet-team .container .testimonial .testimonial-text .rev-3 .jack p {
+    color: #F94D1C;
+    font-size: 12px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-3 .jack img {
+    padding-right: 10px;
+  }
+  .meet-team .container .testimonial .testimonial-text .rev-3 .jack .jack-text {
+    padding-top: 15px;
+  }
+}
