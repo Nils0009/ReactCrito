@@ -1,12 +1,15 @@
 import React from 'react'
+import MainCricleBtn from '../../Generics/MainCricleBtn'
 
-function ServicesConsulting({titel, description,}) {
+function ServicesConsulting({classname, title, description,}) {
   return (
-    <div>
-        <h3>{titel}</h3>
+    <>
+      <div className={classname}>
+        <h3>{title}</h3>
         <p>{description}</p>
-        <button className="more-info"><i className="fa-solid fa-arrow-right"></i></button>
-    </div>
+        <MainCricleBtn classname={"more-info"} icon={"fa-solid fa-arrow-right"}/>
+      </div>
+    </>
   )
 }
 

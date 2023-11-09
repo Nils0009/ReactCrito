@@ -17,17 +17,6 @@ header .container {
     grid-template-areas: "logotype contactinfo social" "logotype menu menu";
   }
 }
-header .container .btn-mini-menu {
-  grid-area: bars;
-  font-size: 30px;
-  border: none;
-  background-color: transparent;
-}
-@media (min-width: 992px) {
-  header .container .btn-mini-menu {
-    display: none;
-  }
-}
 header .container .logotype {
   grid-area: logotype;
   margin-right: 70px;

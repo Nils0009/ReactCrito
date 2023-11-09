@@ -1,6 +1,9 @@
 import React from 'react'
 import './Menu.css'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import MainBtn from '../Generics/MainBtn'
+
+
 function Menu() {
   return (
     <div className="menu">
@@ -10,7 +13,7 @@ function Menu() {
             <NavLink to="/news">News</NavLink>
             <NavLink to="/contact">Contact</NavLink>
         </nav>
-        <a className="btn-theme" href="login.html">Login <i className="fa-solid fa-arrow-up-right"></i></a>
+        <MainBtn className={"btn-theme"} destination={"/login"} text={"Login"}/>
     </div>
   )
 }

@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function FooterCompanyInfo({titel, text1, text2, text3, text4}) {
+function FooterCompanyInfo({title, text1, text2, text3, text4}) {
   return (
     <>
-        <h3><a href="#">{titel}</a></h3>
+        <h3><a href="#">{title}</a></h3>
         <ul>
-            <li><a href="#">{text1}</a></li>
-            <li><a href="#">{text2}</a></li>
-            <li><a href="#">{text3}</a></li>
-            <li><a href="#">{text4}</a></li>
+            <li><Link to={"/Companyinfo"}>{text1}</Link></li>
+            <li><Link to={"/Companyinfo"}>{text2}</Link></li>
+            <li><Link to={"/Companyinfo"}>{text3}</Link></li>
+            <li><Link to={"/Companyinfo"}>{text4}</Link></li>
         </ul>
     </>
   )

@@ -1,17 +1,13 @@
 .choose-us {
 
-    .container-fluid {
-
-        @media (min-width: 1920px) {
-            max-width: 1820px;
-        }
+    .container {
 
         .reasons-why {
             display: grid;
             column-gap: 10px;
             row-gap: 30px;
             grid-template-columns: auto;
-            grid-template-areas:    "titel"
+            grid-template-areas:    "title"
                                     "reason1"
                                     "reason2"
                                     "reason3"
@@ -20,15 +16,16 @@
             @media (min-width: 768px) {
                 row-gap: 0px;
                 grid-template-columns: 1fr 1fr;
-                grid-template-areas:    "titel titel"
+                grid-template-areas:    "title title"
                                         "reason1 reason2"
                                         "reason3 reason4";
             }
 
 
             @media (min-width: 1200px) {
-                grid-template-columns: 1fr 700px;
-                grid-template-areas:    "titel image1"
+                column-gap: 70px;
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas:    "title image1"
                                         "reason1 image1"
                                         "reason2 image1"
                                         "reason3 image1"
@@ -36,16 +33,14 @@
             }
 
             @media (min-width: 1400px) {
-                grid-template-columns: 1fr 1000px;
+                grid-template-columns: 1fr 2fr;
             }
 
-            .section-titel {
-                grid-area: titel;
+            .section-title {
+                grid-area: title;
 
                 @media (min-width: 1200px) {
                     width: 400px;
-                    margin-left: 240px;
-                    margin-right: 200px;
                 }
             }
 
@@ -125,7 +120,8 @@
                 background-color: #F0EFE9;
 
                 @media (min-width: 1200px) {
-                    display: block;
+                    width: 100%;
+                    display: flex;
                     grid-row: 2 / 6;
                     margin-bottom: 40px;
                     margin-right: 10px;

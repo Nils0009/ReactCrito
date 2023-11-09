@@ -5,7 +5,7 @@
         text-align: center;
         display: grid;
         grid-template-columns: auto;
-        grid-template-areas:    "titel"
+        grid-template-areas:    "title"
                                 "company-content";
 
         @media (min-width: 1200px) {
@@ -13,7 +13,7 @@
             padding-top: 120px;
             column-gap: 100px;
             grid-template-columns: 1fr 1fr;
-            grid-template-areas:    "founder titel"
+            grid-template-areas:    "founder title"
                                     "founder company-content";
         }
 
@@ -22,12 +22,12 @@
             column-gap: 120px;
         }
 
-        .section-titel {
-            grid-area: titel;
+        .section-title {
+            grid-area: title;
             grid-row: 1/2;
 
             @media (min-width: 1200px) {
-                padding: 0px 0px 30px;
+                padding: 0px 0px 10px;
                 max-width: 500px;
             }
 
@@ -115,20 +115,27 @@
 
                 @media (min-width: 1200px) {
                     padding-bottom: 40px;
-                    width: 500px;
                 }
 
             }
 
             .company-info {
+                display: flex;
+                justify-content: center;
 
                 @media (min-width: 768px) {
                     margin: 20px 0px 90px;
                 }
 
+                @media (min-width: 1200px) {
+                    justify-content: left;
+                    padding-top: 30px;
+                }
+
                 .btn-black {
+
                     a {
-                        display: block;
+                        display: flex;
                         border: none;
                         background-color: #000000;
                         color: #ffff;

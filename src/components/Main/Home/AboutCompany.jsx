@@ -1,8 +1,9 @@
 import React from 'react'
 import './AboutCompany.css'
 import img_samantha from '../../../assets/Images/samantha.png'
-import SectionTitel from '../../Generics/SectionTitel'
-
+import SectionTitle from '../../Generics/SectionTitle'
+import MainBtn from '../../Generics/MainBtn'
+import MainCricleBtn from '../../Generics/MainCricleBtn'
 
 function AboutCompany() {
   return (
@@ -19,16 +20,18 @@ function AboutCompany() {
             </div>
             
         </div>
-        <SectionTitel titel="About Company" description="We Are Business Consulting & Credit Repair Experts"/>
+        <SectionTitle title="About Company" description="We Are Business Consulting & Credit Repair Experts"/>
 
         <div className="about-company-content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet</p>
+            
             <div className="company-info">
-                <a className="btn-black" href="#">Learn More <i className="fa-solid fa-arrow-up-right"></i></a>
-                <a><div className="btn-intro-vid"><i className="fa-solid fa-play"></i></div></a>
+                <MainBtn className={"btn-black"} destination={"/#"} text={"Learn More"}/>
+                <MainCricleBtn classname={"btn-intro-vid"} icon={"fa-solid fa-play"}/>
                 <p>Intro Video</p>
-            </div>                  
+            </div> 
+
         </div>
     </div>
 </section>

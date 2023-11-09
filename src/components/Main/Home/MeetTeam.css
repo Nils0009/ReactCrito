@@ -26,7 +26,7 @@
     margin-top: 120px;
   }
 }
-.meet-team .container .meet-team-top .section-titel {
+.meet-team .container .meet-team-top .section-title {
   padding-bottom: 30px;
 }
 .meet-team .container .team-members {
@@ -85,25 +85,25 @@
   text-align: center;
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "titel" "rev-1" "cassandra";
+  grid-template-areas: "title" "rev-1" "cassandra";
 }
 @media (min-width: 768px) {
   .meet-team .container .testimonial .testimonial-text {
     text-align: left;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "titel titel" "rev-1 rev-2" "cassandra amanda";
+    grid-template-areas: "title title" "rev-1 rev-2" "cassandra amanda";
   }
 }
 @media (min-width: 1200px) {
   .meet-team .container .testimonial .testimonial-text {
     gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "titel titel titel" "rev-1 rev-2 rev-3" "cassandra amanda jack";
+    grid-template-areas: "title title title" "rev-1 rev-2 rev-3" "cassandra amanda jack";
   }
 }
-.meet-team .container .testimonial .testimonial-text .section-titel {
-  grid-area: titel;
+.meet-team .container .testimonial .testimonial-text .section-title {
+  grid-area: title;
   text-align: center;
 }
 .meet-team .container .testimonial .testimonial-text .rev-1 {

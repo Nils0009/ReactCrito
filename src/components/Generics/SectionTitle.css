@@ -1,39 +1,39 @@
-.section-titel {
+.section-title {
   padding-top: 70px;
   padding-bottom: 30px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .section-titel {
+  .section-title {
     padding-top: 120px;
     padding-bottom: 90px;
   }
 }
 @media (min-width: 992px) {
-  .section-titel {
+  .section-title {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media (min-width: 1200px) {
-  .section-titel {
+  .section-title {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
   }
 }
-.section-titel p {
+.section-title p {
   color: #F94D1C;
   margin-bottom: 10px;
 }
-.section-titel h2 {
+.section-title h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 35px;
 }
 @media (min-width: 768px) {
-  .section-titel h2 {
+  .section-title h2 {
     font-size: 45px;
   }
 }

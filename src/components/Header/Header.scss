@@ -17,16 +17,6 @@ header {
                                     "logotype menu menu";
         }
 
-        .btn-mini-menu {
-            grid-area: bars;
-            font-size: 30px;
-            border: none;
-            background-color: transparent;
-
-            @media (min-width: 992px) {
-                display: none;
-            }
-        }
 
         .logotype {
             grid-area: logotype;

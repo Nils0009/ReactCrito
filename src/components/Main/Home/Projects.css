@@ -1,4 +1,4 @@
-.project .container .section-titel {
+.project .container .section-title {
   text-align: center;
 }
 .project .container .project-case {
@@ -11,43 +11,45 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-.project .container .project-case article {
+.project .container .project-case a {
+  text-decoration: none;
+  color: #191919;
+}
+.project .container .project-case a article {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   transition: box-shadow 0.2s ease-in-out;
   box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
 }
-.project .container .project-case article:hover {
+.project .container .project-case a article:hover {
   box-shadow: 3px 3px 3px 2px rgba(138, 137, 137, 0.5254901961);
 }
-.project .container .project-case article img {
+.project .container .project-case a article img {
   width: 100%;
-  height: auto;
+  height: 400px;
 }
-.project .container .project-case article h3 {
+.project .container .project-case a article h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
-  padding-top: 35px;
-  padding-bottom: 16px;
+  padding: 30px 20px 16px;
   border-bottom: 1px solid #DAD9D3;
 }
-.project .container .project-case article a {
+.project .container .project-case a article p {
   padding: 15px;
   margin-right: 15px;
-  display: block;
+  display: inline;
   text-align: right;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #191919;
 }
-.project .container .project-case article a:hover {
+.project .container .project-case a article p:hover {
   text-decoration: underline;
 }
-.project .container .project-case article i {
+.project .container .project-case a article i {
   margin-left: 3px;
 }
 .project .container .center-btn {

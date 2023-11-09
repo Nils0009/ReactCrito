@@ -4,13 +4,13 @@ import img_AmandaTulling from '../../../assets/Images/Amanda-Tulling.png'
 import img_JackMcDogglas from '../../../assets/Images/Jack-McDogglas.png'
 import img_Star from '../../../assets/Images/Star.svg'
 
-import SectionTitel from '../../Generics/SectionTitel'
+import SectionTitle from '../../Generics/SectionTitle'
 
 function MeetTeamTestimonial() {
   return (
     <>
         <div className="testimonial-text">
-        <SectionTitel titel="Testimonial" description="What Our Client Says"/>
+        <SectionTitle title="Testimonial" description="What Our Client Says"/>
 
         <div className="rev-1">
             <img src={img_Star} alt="star icon"/>

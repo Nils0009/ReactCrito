@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function ArticleNewsContent({titel, description, text}) {
+function ArticleNewsContent({destination, image, title, description, text}) {
   return (
-    <>                
-        <p>{titel}</p>
-        <h3>{description}</h3>
-        <p>{text}</p>
-            
+    <>
+        <Link to={destination}><img className="img-fluid" src={image}/>               
+          <p>{title}</p>
+          <h3>{description}</h3>
+          <p>{text}</p>
+        </Link>                     
     </>
   )
 }

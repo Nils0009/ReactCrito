@@ -4,86 +4,72 @@
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 998px) {
+@media (min-width: 1200px) {
   .article-news .container .article-news-top {
     flex-direction: row;
   }
 }
 .article-news .container .article-news-top .btn-transparent {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 90px;
 }
-@media (min-width: 998px) {
+@media (min-width: 576px) {
   .article-news .container .article-news-top .btn-transparent {
-    margin-top: 150px;
-    padding: 15px;
+    margin-bottom: 10px;
   }
 }
-.article-news .container .article-news-top .section-titel {
+@media (min-width: 1200px) {
+  .article-news .container .article-news-top .btn-transparent {
+    padding: 12px 9px;
+    margin-top: 120px;
+  }
+}
+.article-news .container .article-news-top .section-title {
   padding-bottom: 30px;
 }
 .article-news .container .article-news-content {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "content-2 content-3";
+  display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .article-news .container .article-news-content {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "content-1 content-2 content-3";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
-.article-news .container .article-news-content .img-fluid {
+@media (min-width: 992px) {
+  .article-news .container .article-news-content {
+    flex-direction: row;
+  }
+}
+.article-news .container .article-news-content .article-content {
+  width: 100%;
+  max-height: 100%;
+  margin: 20px;
+  transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
+}
+.article-news .container .article-news-content .article-content:hover {
+  box-shadow: 3px 3px 3px 2px rgba(138, 137, 137, 0.5254901961);
+}
+.article-news .container .article-news-content .article-content a {
+  text-decoration: none;
+  color: #191919;
+}
+.article-news .container .article-news-content .article-content .img-fluid {
+  width: 100%;
+  height: 300px;
   padding-bottom: 10px;
 }
-.article-news .container .article-news-content h3 {
+.article-news .container .article-news-content .article-content h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   padding-bottom: 15px;
 }
 @media (min-width: 768px) {
-  .article-news .container .article-news-content h3 {
+  .article-news .container .article-news-content .article-content h3 {
     font-size: 22px;
   }
-}
-.article-news .container .article-news-content .article-news-content-1,
-.article-news .container .article-news-content .article-news-content-2,
-.article-news .container .article-news-content .article-news-content-3 {
-  transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
-  box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
-}
-.article-news .container .article-news-content .article-news-content-1:hover,
-.article-news .container .article-news-content .article-news-content-2:hover,
-.article-news .container .article-news-content .article-news-content-3:hover {
-  box-shadow: 3px 3px 3px 2px rgba(138, 137, 137, 0.5254901961);
-}
-.article-news .container .article-news-content .article-news-content-1 a,
-.article-news .container .article-news-content .article-news-content-2 a,
-.article-news .container .article-news-content .article-news-content-3 a {
-  text-decoration: none;
-  color: #191919;
-}
-.article-news .container .article-news-content .article-news-content-1 {
-  grid-area: content-1;
-  display: none;
-}
-@media (min-width: 768px) {
-  .article-news .container .article-news-content .article-news-content-1 {
-    display: block;
-  }
-}
-.article-news .container .article-news-content .article-news-content-2 {
-  grid-area: content-2;
-}
-.article-news .container .article-news-content .article-news-content-3 {
-  grid-area: content-3;
-}
-.article-news .container .dot-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
 }

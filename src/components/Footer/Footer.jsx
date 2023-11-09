@@ -15,21 +15,21 @@ function Footer() {
                 <img src={img_logotypewhite} alt="crito logo, a capital c with color"/>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
             </div>
-
+            
             <div className="company-section">
-                <FooterCompanyInfo titel="Company" text1="About" text2="Features" text3="Works" text4="Career" />
+                <FooterCompanyInfo title="Company" text1="About" text2="Features" text3="Works" text4="Career" />
             </div>
 
             <div className="help-section">
-                <FooterCompanyInfo titel="Help" text1="Customer Support" text2="Delivery Details" text3="Terms & Conditions" text4="Privacy Policy" />
+                <FooterCompanyInfo title="Help" text1="Customer Support" text2="Delivery Details" text3="Terms & Conditions" text4="Privacy Policy" />
             </div>
 
             <div className="resources-section">
-            <FooterCompanyInfo titel="Resources" text1="Free eBooks" text2="Development Tutorial" text3="How to - Blog" text4="Youtube Playlist" />
+            <FooterCompanyInfo title="Resources" text1="Free eBooks" text2="Development Tutorial" text3="How to - Blog" text4="Youtube Playlist" />
             </div>
 
             <div className="link-section">
-            <FooterCompanyInfo titel="Link" text1="Free eBooks" text2="Development Tutorial" text3="How to - Blog" text4="Youtube Playlist" />
+            <FooterCompanyInfo title="Link" text1="Free eBooks" text2="Development Tutorial" text3="How to - Blog" text4="Youtube Playlist" />
             </div>    
 
         </div> 

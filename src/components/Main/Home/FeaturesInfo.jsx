@@ -1,10 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function FeaturesInfo({titel, text}) {
+function FeaturesInfo({classname, image, alttext, title, text}) {
   return (
     <>
-        <h3>{titel}</h3>
+      <div className={classname}>
+        <Link to="#"><img src={image} alt={alttext}/></Link>
+        <h3>{title}</h3>
         <p>{text}</p>
+      </div>
+
     </>
   )
 }

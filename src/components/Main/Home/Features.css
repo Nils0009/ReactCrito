@@ -152,23 +152,23 @@
     padding-right: 150px;
   }
 }
-.features .container .section-titel {
+.features .container .section-title {
   grid-area: features-about;
 }
 @media (min-width: 1200px) {
-  .features .container .section-titel {
+  .features .container .section-title {
     grid-row: 1/2;
     padding-top: 0px;
     padding-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
-  .features .container .section-titel h2 {
+  .features .container .section-title h2 {
     padding-right: 40px;
   }
 }
 @media (min-width: 1400px) {
-  .features .container .section-titel h2 {
+  .features .container .section-title h2 {
     padding-right: 90px;
   }
 }

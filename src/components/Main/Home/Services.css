@@ -35,8 +35,8 @@
 }
 .services .container .more-info {
   float: right;
-  border-radius: 50px;
-  border: 10px solid black;
+  border-radius: 25px;
+  padding: 10px;
   margin: 10px;
   margin-top: 30px;
   float: right;
@@ -46,20 +46,20 @@
 }
 .services .container .more-info i {
   color: white;
+  padding: 5px;
 }
 .services .container .more-info:hover {
   background-color: white;
-  border: 10px solid white;
   box-shadow: 3px 3px 5px 2px rgba(95, 95, 95, 0.5254901961);
 }
 .services .container .more-info:hover i {
   color: black;
 }
-.services .container .section-titel {
+.services .container .section-title {
   grid-area: consulting;
 }
 @media (min-width: 1200px) {
-  .services .container .section-titel {
+  .services .container .section-title {
     grid-column: 1/3;
     padding-right: 80px;
   }
@@ -73,7 +73,6 @@
 .services .container .center-btn a {
   background-color: transparent;
   border: 1px solid black;
-  display: block;
 }
 .services .container .center-btn a:hover {
   background-color: #F2CF80;

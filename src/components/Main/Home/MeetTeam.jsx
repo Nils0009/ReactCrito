@@ -1,7 +1,7 @@
 import React from 'react'
 import './MeetTeam.css'
 
-import SectionTitel from '../../Generics/SectionTitel'
+import SectionTitle from '../../Generics/SectionTitle'
 import MeetTeamMembers from './MeetTeamMembers'
 import MeetTeamTestimonial from './MeetTeamTestimonial'
 
@@ -12,7 +12,7 @@ function MeetTeam() {
     <div className="container">
 
         <div className="meet-team-top">
-        <SectionTitel titel="Meet Our Team<" description="Experience Team Members"/>
+        <SectionTitle title="Meet Our Team<" description="Experience Team Members"/>
             <a className="btn-theme" href="#">Browse Team<i className="fa-solid fa-arrow-up-right"></i></a>                        
         </div>
 

@@ -1,34 +1,27 @@
 import React from 'react'
 import './Services.css'
 import ServicesConsulting from './ServicesConsulting'
-import SectionTitel from '../../Generics/SectionTitel'
-import { Link } from 'react-router-dom'
+import SectionTitle from '../../Generics/SectionTitle'
+import MainBtn from '../../Generics/MainBtn'
 
 function Services() {
   return (
     <section className="services">
     <div className="container">
 
-        <SectionTitel titel="Our Services" description="We Provide The Best Service For Consulting"/>
+        <SectionTitle title="Our Services" description="We Provide The Best Service For Consulting"/>
             
-        <div className="consulting-business">
-        <ServicesConsulting titel="Business Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
-        </div>
+        <ServicesConsulting classname={"consulting-business"} title="Business Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
 
-        <div className="consulting-startup">
-        <ServicesConsulting titel="Startup Business" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
-        </div>
+        <ServicesConsulting classname={"consulting-startup"} title="Startup Business" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
 
-        <div className="consulting-financial">
-        <ServicesConsulting titel="Financial Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
-        </div>
+        <ServicesConsulting classname={"consulting-financial"} title="Financial Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
 
-        <div className="consulting-risk">
-        <ServicesConsulting titel="Risk Management" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
-        </div>
+        <ServicesConsulting classname={"consulting-risk"} title="Risk Management" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."/>
+
 
         <div className="center-btn">
-            <Link className="btn-transparent" to="/services">Browse Services <i className="fa-solid fa-arrow-up-right"></i></Link>
+            <MainBtn className={"btn-transparent"} destination={"/services"} text={"Browse Services"}/>
         </div>
 
     </div>                                 

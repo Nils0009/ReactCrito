@@ -2,21 +2,10 @@ import React, { useEffect, useState } from 'react'
 import './NewsAndArticles.css'
 import NewsAndArticlesContent from './NewsAndArticlesContent'
 import { Link } from 'react-router-dom'
+import { useArticles } from '../../../contexts/ArticleContext'
 
 function NewsAndArticles() {
-    const [articles, setArticles] = useState([])
-
-    useEffect(() => {
-        getArticles()
-    }, [])
-
-    const getArticles = async () => {
-        const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
-
-        if (result.status === 200) {
-            setArticles(await result.json())
-        }
-    }
+    const { articles } = useArticles()
 
   return (
     <section className="news-and-articles">
@@ -25,7 +14,7 @@ function NewsAndArticles() {
             <div className="content">
                 {
                     articles.map(article => (
-                        <Link key={article.id}>
+                        <Link key={article.id} to={`/article/${article.id}`}>
                             <NewsAndArticlesContent pic={article.imageUrl}  category={article.category} title={article.title} text={article.content}/>
                         </Link>
                     ))

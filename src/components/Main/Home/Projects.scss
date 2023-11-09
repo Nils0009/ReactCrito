@@ -2,7 +2,7 @@
 
     .container {
 
-        .section-titel {
+        .section-title {
             text-align: center;
         }
 
@@ -15,49 +15,54 @@
                 grid-template-columns: 1fr 1fr;
             }
 
-            article {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto 1fr auto;
-                transition: box-shadow 0.2s ease-in-out;
-                box-shadow: 7px 7px 7px 2px #8a898986;
+            a {
 
-                &:hover {
-                    box-shadow: 3px 3px 3px 2px #8a898986;
-                }
+                text-decoration: none;
+                color: #191919;
 
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                h3 {
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 22px;
-                    padding-top: 35px;
-                    padding-bottom: 16px;
-                    border-bottom: 1px solid #DAD9D3;
-                }
-
-                a {
-                    padding: 15px;
-                    margin-right: 15px;
-                    display: block;
-                    text-align: right;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 14px;
-                    font-weight: 500;
-                    text-decoration: none;
-                    color: #191919;
-
+                article {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto 1fr auto;
+                    transition: box-shadow 0.2s ease-in-out;
+                    box-shadow: 7px 7px 7px 2px #8a898986;
+    
                     &:hover {
-                        text-decoration: underline;
+                        box-shadow: 3px 3px 3px 2px #8a898986;
                     }
-                }
+    
+                    img {
+                        width: 100%;
+                        height: 400px;
+                    }
+    
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                        padding: 30px 20px 16px;
 
-                i {
-                    margin-left: 3px;
+                        border-bottom: 1px solid #DAD9D3;
+                    }
+    
+                    p {
+                        padding: 15px;
+                        margin-right: 15px;
+                        display: inline;
+                        text-align: right;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: #191919;
+    
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+    
+                    i {
+                        margin-left: 3px;
+                    }
                 }
             }
         }
