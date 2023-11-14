@@ -9,6 +9,7 @@ function AboutCompany() {
   return (
     <section className="about-company">
     <div className="container">
+        
         <div className="about-founder">
             <img src={img_samantha} alt="The founder Samantha Brown" className="image-samantha"/>         
             <div className="info-samantha">
@@ -17,8 +18,7 @@ function AboutCompany() {
                     <h2>Founder</h2>
                 </div>                                 
                 <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</blockquote>
-            </div>
-            
+            </div>          
         </div>
         <SectionTitle title="About Company" description="We Are Business Consulting & Credit Repair Experts"/>
 
@@ -27,11 +27,10 @@ function AboutCompany() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet</p>
             
             <div className="company-info">
-                <MainBtn className={"btn-black"} destination={"/#"} text={"Learn More"}/>
+                <MainBtn className={"btn-black"} destination={"/Contact"} text={"Learn More"}/>
                 <MainCricleBtn classname={"btn-intro-vid"} icon={"fa-solid fa-play"}/>
                 <p>Intro Video</p>
             </div> 
-
         </div>
     </div>
 </section>

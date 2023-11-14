@@ -107,10 +107,6 @@
     padding-bottom: 40px;
   }
 }
-.about-company .container .about-company-content .company-info {
-  display: flex;
-  justify-content: center;
-}
 @media (min-width: 768px) {
   .about-company .container .about-company-content .company-info {
     margin: 20px 0px 90px;
@@ -122,52 +118,42 @@
     padding-top: 30px;
   }
 }
-.about-company .container .about-company-content .company-info .btn-black a {
-  display: flex;
-  border: none;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-}
 @media (min-width: 576px) {
-  .about-company .container .about-company-content .company-info .btn-black a {
+  .about-company .container .about-company-content .company-info .btn-black {
     display: inline;
   }
 }
-.about-company .container .about-company-content .company-info .btn-black a:hover {
-  background-color: #F2CF80;
-  color: #000000;
-}
 .about-company .container .about-company-content .company-info .btn-intro-vid {
   display: none;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 50%;
-  margin: 30px;
-  padding: 12px;
-  transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
-  box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
-}
-.about-company .container .about-company-content .company-info .btn-intro-vid i {
-  margin: 5px;
 }
 @media (min-width: 576px) {
   .about-company .container .about-company-content .company-info .btn-intro-vid {
     display: inline;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 12px;
+    transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 7px 7px 7px 2px rgba(138, 137, 137, 0.5254901961);
+  }
+  .about-company .container .about-company-content .company-info .btn-intro-vid i {
+    margin: 5px;
+    color: #000000;
+  }
+  .about-company .container .about-company-content .company-info .btn-intro-vid:hover {
+    background-color: #000000;
+    box-shadow: 3px 3px 3px 2px rgba(138, 137, 137, 0.5254901961);
+    cursor: pointer;
+  }
+  .about-company .container .about-company-content .company-info .btn-intro-vid:hover i {
+    color: #f0efe9;
   }
 }
 @media (min-width: 1400px) {
   .about-company .container .about-company-content .company-info .btn-intro-vid {
     margin-left: 1rem;
   }
-}
-.about-company .container .about-company-content .company-info .btn-intro-vid:hover {
-  background-color: #000000;
-  box-shadow: 3px 3px 3px 2px rgba(138, 137, 137, 0.5254901961);
-  cursor: pointer;
-}
-.about-company .container .about-company-content .company-info .btn-intro-vid:hover i {
-  color: #f0efe9;
 }
 .about-company .container .about-company-content .company-info p {
   display: none;

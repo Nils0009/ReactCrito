@@ -16,7 +16,6 @@ function Header() {
           <div className="logotype">
             <Link to="/"><img src={img_logotype} alt="crito logo"/></Link>
           </div>
-
           <Contactinformation />
           <Socialmedia />
           <Menu />

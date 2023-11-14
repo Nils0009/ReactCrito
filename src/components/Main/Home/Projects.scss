@@ -9,31 +9,44 @@
         .project-case {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 30px;
+            gap: 20px;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
 
             @media (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
             }
 
-            a {
-
-                text-decoration: none;
-                color: #191919;
-
                 article {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto 1fr auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     transition: box-shadow 0.2s ease-in-out;
                     box-shadow: 7px 7px 7px 2px #8a898986;
     
                     &:hover {
                         box-shadow: 3px 3px 3px 2px #8a898986;
                     }
+
+                    @media (min-width: 992px) {
+                        padding-bottom: 10px;
+                    }
     
                     img {
                         width: 100%;
-                        height: 400px;
+                        height: 300px;
+                        padding: 10px;
+
+                        @media (min-width: 768px) {
+                            height: 250px;
+                        }
+
+                        @media (min-width: 1200px) {
+                            height: 400px;
+                        }
                     }
     
                     h3 {
@@ -64,7 +77,7 @@
                         margin-left: 3px;
                     }
                 }
-            }
+            
         }
 
         .center-btn {

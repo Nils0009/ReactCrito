@@ -5,6 +5,7 @@ import News from './views/News'
 import Contact from './views/Contact'
 import NotFound from './views/NotFound'
 import Article from './views/Article'
+import ArticleDetail from './components/Main/News/ArticleDetail'
 import { ArticleProvider } from './contexts/ArticleContext'
 
 
@@ -22,6 +23,7 @@ return (
           <Route path='/news' element={<News/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/article/:id' element={<Article />} />
+          <Route path='/article/:id' element={<ArticleDetail />} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
       </ArticleProvider>

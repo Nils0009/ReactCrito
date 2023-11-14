@@ -5,7 +5,7 @@ function MainBtn({className, destination, text}) {
 
   return (
     <>
-        <Link className={className} to={destination}>{text}<i className="fa-solid fa-arrow-up-right"></i></Link>
+      <Link className={className} to={destination}>{text}<i className="fa-solid fa-arrow-up-right"></i></Link>
     </>
   )
 }
