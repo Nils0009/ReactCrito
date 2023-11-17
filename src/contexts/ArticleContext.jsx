@@ -28,6 +28,12 @@ export const ArticleProvider = ({children}) => {
             if (result.status === 200) {
                 setArticle(await result.json())
             }
+            else if (result.status === 400) {
+                console.warn("The id parameter is missing or invalid")
+            }
+            else if (result.status === 404) {
+                console.warn("No article is found with the provided ID")
+            }
         }
     }
 

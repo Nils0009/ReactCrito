@@ -11,7 +11,7 @@ header {
         grid-template-columns: 1fr auto;
         grid-template-areas:    "logotype bars";
 
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             grid-template-columns: auto 1fr auto;
             grid-template-areas:    "logotype contactinfo social"
                                     "logotype menu menu";

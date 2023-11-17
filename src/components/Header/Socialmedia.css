@@ -2,7 +2,7 @@
   grid-area: social;
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .socialmedia {
     display: block;
   }
@@ -10,7 +10,7 @@
 .socialmedia a {
   color: #191919;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
   border-radius: 100%;
   transition: color 0.2s ease-in-out;
 }

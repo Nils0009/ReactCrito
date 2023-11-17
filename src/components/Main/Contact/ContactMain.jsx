@@ -19,7 +19,6 @@ function ContactMain() {
                 </div>
 
                 <div className="contact-form">
-                    <h2>Leave us a message for any information.</h2>
                     <ContactMainForm />
                 </div>
             </div>

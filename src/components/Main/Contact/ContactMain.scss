@@ -104,6 +104,10 @@
                 align-items: center;
                 padding-bottom: 100px;
 
+                label {
+                    color: red;
+                }
+                
                 #name,
                 #email,
                 #message,
@@ -113,13 +117,17 @@
                     margin-bottom: 15px;
                     border-radius: 20px;
                     border: none;
+
                 }
 
                 button {
                     margin-top: 25px;
                 }
-            }
 
+                .errorMessage {
+                    color: red;
+                }
+            }
         }
     }
 

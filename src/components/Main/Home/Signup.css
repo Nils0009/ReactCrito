@@ -24,6 +24,7 @@
   }
 }
 .signup .container h2 {
+  display: flex;
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
@@ -31,18 +32,25 @@
 }
 @media (min-width: 1200px) {
   .signup .container h2 {
-    padding-right: 50px;
+    padding-right: 30px;
     padding-bottom: 0px;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 .signup .container form {
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .signup .container form {
+    display: block;
+  }
 }
 .signup .container form input {
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 12px 30px;
   font-size: 16px;
   border-radius: 25px;
   outline: none;
@@ -55,5 +63,10 @@
   }
 }
 .signup .container form .btn-theme {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+@media (min-width: 576px) {
+  .signup .container form .btn-theme {
+    margin-top: 50px;
+  }
 }

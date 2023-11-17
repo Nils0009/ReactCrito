@@ -1,17 +1,14 @@
 import React from 'react'
-import './ArticleNews.css'
-import ArticleNewsContent from './ArticleNewsContent'
+import './NewsAndArticlesDetail.css'
+import ArticleNewsContent from '../Home/ArticleNewsContent'
 import MainBtn from '../../Generics/MainBtn'
 import SectionTitle from '../../Generics/SectionTitle'
 import { useArticles } from '../../../contexts/ArticleContext'
 
-
-
-function ArticleNews() {
+function NewsAndArticlesDetail() {
     const { threeArticles } = useArticles()
-
   return (
-    <section className="article-news">
+    <section className="NewsAndArticlesDetail">
         <div className="container">
             <div className="article-news-top">
                 <SectionTitle title={"Article & News"} description={"Get Every Single Articles & News"}/>
@@ -26,7 +23,7 @@ function ArticleNews() {
                                 <div>{new Date(article.published).toLocaleDateString('default', { day: 'numeric' })}</div>
                                 <div>{new Date(article.published).toLocaleDateString('default', { month: 'short' })}</div> 
                             </div>
-                            <ArticleNewsContent destination={`/article/${article.id}`} image={article.imageUrl} title={article.title} description={article.category} text={article.content} />                       
+                            <ArticleNewsContent destination={`/article/${article.id}`} image={article.imageUrl} title={article.title} description={article.category} text={article.content} />                           
                         </div>
                     ))
                 } 
@@ -36,4 +33,4 @@ function ArticleNews() {
   )
 }
 
-export default ArticleNews
+export default NewsAndArticlesDetail

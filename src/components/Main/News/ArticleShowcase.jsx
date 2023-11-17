@@ -1,16 +1,20 @@
 import React from 'react'
-import './NewsShowcase.css'
 import img_backgroundlines from '../../../assets/Images/background-lines.svg'
-import LinkTrail from '../../Generics/LinkTrail'
+import { Link } from 'react-router-dom'
 
-function NewsShowcase() {
+function ArticleShowcase() {
   return (
     <section className="news-showcase">
     <img className="img-fluid" src={img_backgroundlines} alt=""/>
 
     <div className="container">
         <div className="content">
-          <LinkTrail prev={"Home"} current={"News"} />
+        <div className="link-trail">
+            <ul className="breadcrumb">
+                <li><Link to="/News">News</Link></li>
+                <li className="active">Article</li>
+            </ul>
+        </div>  
           <h1>News & Articles</h1>
         </div>       
     </div>
@@ -19,4 +23,4 @@ function NewsShowcase() {
   )
 }
 
-export default NewsShowcase
+export default ArticleShowcase

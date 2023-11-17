@@ -1,77 +1,79 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './ArticleDetail.css'
 import ArticleDetailRight from './ArticleDetailRight'
 import { useArticles } from '../../../contexts/ArticleContext'
+import ArticleDetailButtons from './ArticleDetailButtons'
 
 
 function Article() {
-  const { articles, article, getArticles, getArticle } = useArticles()
+  const { article, threeArticles, fourArticles, getArticle } = useArticles()
   const { id } = useParams()
 
  useEffect(() => {
   getArticle(id)
-  getArticles()
- }, [])
+ }, [id])
 
   return ( 
     <div className='articleDetail'>
       <div className='container'>
-
+        
         <div className="content-top">
-
-            <h2>{article.category}</h2>
-            <h4>{article.title}</h4>
-            <h6>{article.author}</h6>
-
-          <p>{new Date(article.published).toLocaleDateString()}</p> <p>{article.author}</p>
-
+            <h2>{article.title}</h2>
+              <div className='content-top-detail'>
+                <div>
+                  {new Date(article.published).toLocaleDateString()}            
+                </div>
+                <i className="fa-solid fa-circle"></i>
+                <div>
+                  {article.category}
+                </div>
+                <i className="fa-solid fa-circle"></i>
+                <div>       
+                  {article.author}
+                </div>
+              </div>
         </div>
 
         <div className="content-main">
           <img src={article.imageUrl}/>
-
-          <p>{article.content}</p>
-          
-          <button className="btn-theme">Digitalization</button>
-          <button className="btn-theme">School</button>
-          <button className="btn-theme">IT</button>
-          <button className="btn-theme">Design</button>
-          <button className="btn-theme">Work</button>
-          <button className="btn-theme">Tech</button>
+          <p>{article.content}</p> 
+          <ArticleDetailButtons />
         </div>
 
         <div className="content-side">
-            <form>                               
-              <input type="text" placeholder="Type to search..."/>                              
+            <form>     
+              <i className="fa-thin fa-magnifying-glass"></i>                          
+              <input type="text" placeholder="Type to search..." />                              
             </form>
 
             <div className="r-post">
               <h3>Recent Posts</h3>
               {
-                    articles.map(article => (
-                        <div key={article.id}>
+                    fourArticles.map(article => (
+                        <Link key={article.id} to={`/article/${article.id}`}>
                             <ArticleDetailRight title={article.title} published={new Date(article.published).toLocaleDateString()} />
-                        </div>
+                        </Link>
                     ))
               }
-
-
             </div>
 
             <div className="categories1">
               <h3>Categories</h3>
-                {
-                        articles.map(article => (
-                            <div key={article.id}>
-                                <p>{article.category} - {article.category.array}</p>
-                            </div>
-                        ))
-                }
+              {
+                  threeArticles.map(article => {
+                    const categoryCount = threeArticles.filter(a => a.category === article.category).length;
+
+                    return (
+                      <div key={article.id}>
+                        <p><strong>{article.category}</strong> - {categoryCount} Posts</p>
+                      </div>
+                    );
+                  })
+              }
             </div>
 
-                    </div>
-        
+        </div>
       </div>
     </div>
 

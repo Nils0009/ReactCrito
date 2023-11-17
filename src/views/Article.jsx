@@ -1,15 +1,17 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import NewsShowcase from '../components/Main/News/NewsShowcase'
 import ArticleDetail from '../components/Main/News/ArticleDetail'
+import Header from '../components/Header/Header'
+import NewsAndArticlesDetail from '../components/Main/News/NewsAndArticlesDetail'
+import ArticleShowcase from '../components/Main/News/ArticleShowcase'
 
 function Article() {
   return (
     <div>
         <Header />
-        <NewsShowcase />
+        <ArticleShowcase />
         <ArticleDetail />
+        <NewsAndArticlesDetail />
         <Footer />
     </div>
   )

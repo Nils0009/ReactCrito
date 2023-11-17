@@ -1,14 +1,19 @@
 .menu {
     grid-area: menu;
     display: none;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #DAD9D3;
-    margin-top: 10px;
-    padding-top: 10px;
 
     @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: none;
+        border-top: 1px solid #DAD9D3;
     }
 
     nav {

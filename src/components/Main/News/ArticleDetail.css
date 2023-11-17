@@ -24,26 +24,52 @@
   grid-area: top;
   padding-top: 90px;
 }
-.articleDetail .container .content-top h2, .articleDetail .container .content-top h4, .articleDetail .container .content-top h6 {
+.articleDetail .container .content-top h2 {
   font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  padding-bottom: 20px;
 }
 @media (min-width: 1200px) {
-  .articleDetail .container .content-top h2, .articleDetail .container .content-top h4, .articleDetail .container .content-top h6 {
+  .articleDetail .container .content-top h2 {
     width: 550px;
+    font-size: 45px;
   }
 }
-.articleDetail .container .content-top h2 {
-  font-weight: 700;
-  font-size: 45px;
+.articleDetail .container .content-top .content-top-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.articleDetail .container .content-top p {
+@media (min-width: 576px) {
+  .articleDetail .container .content-top .content-top-detail {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .articleDetail .container .content-top .content-top-detail {
+    justify-content: start;
+  }
+}
+.articleDetail .container .content-top .content-top-detail p {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
-.articleDetail .container .content-top p i {
-  padding-left: 15px;
-  padding-right: 15px;
+.articleDetail .container .content-top .content-top-detail i {
+  display: none;
+}
+@media (min-width: 576px) {
+  .articleDetail .container .content-top .content-top-detail i {
+    color: #f2cf80;
+    display: block;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 .articleDetail .container .content-main {
   grid-area: main;
@@ -53,21 +79,59 @@
   padding-bottom: 20px;
   color: #9e9e9e;
 }
-.articleDetail .container .content-main button {
+.articleDetail .container .content-main .content-main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .articleDetail .container .content-main .content-main-btn {
+    justify-content: start;
+  }
+}
+.articleDetail .container .content-main .content-main-btn button {
   display: none;
 }
 @media (min-width: 768px) {
-  .articleDetail .container .content-main button {
+  .articleDetail .container .content-main .content-main-btn button {
     background-color: #e9e6e6;
     border: none;
-    display: inline;
+    display: block;
     padding: 12px 28px;
-    margin: 20px 10px 50px;
+    margin: 20px 20px 50px;
+  }
+  .articleDetail .container .content-main .content-main-btn button a {
+    color: black;
+    text-decoration: none;
   }
 }
 .articleDetail .container .content-main img {
-  width: 800px;
-  height: auto;
+  display: none;
+}
+@media (min-width: 540px) {
+  .articleDetail .container .content-main img {
+    display: block;
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .articleDetail .container .content-main img {
+    width: 100%;
+    height: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  .articleDetail .container .content-main img {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .articleDetail .container .content-main img {
+    width: 100%;
+    height: 650px;
+  }
 }
 .articleDetail .container .content-side {
   grid-area: side;
@@ -80,6 +144,7 @@
 }
 .articleDetail .container .content-side form {
   padding-bottom: 30px;
+  position: relative;
 }
 .articleDetail .container .content-side form input {
   color: #191919;
@@ -91,17 +156,26 @@
   border-radius: 25px;
   outline: none;
   border: none;
-  text-align: center;
+  padding-left: 50px;
 }
 @media (min-width: 576px) {
   .articleDetail .container .content-side form input {
     margin-right: 20px;
   }
 }
+.articleDetail .container .content-side form i {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
 .articleDetail .container .content-side .r-post {
   border: 2px solid #eeeded;
   padding: 30px;
   margin-bottom: 30px;
+}
+.articleDetail .container .content-side .r-post a {
+  color: black;
+  text-decoration: none;
 }
 .articleDetail .container .content-side .r-post p {
   border-bottom: 2px solid #eeeded;
@@ -109,6 +183,7 @@
 }
 .articleDetail .container .content-side .r-post h3 {
   padding-bottom: 20px;
+  text-decoration: underline;
 }
 .articleDetail .container .content-side .categories1 {
   border: 2px solid #eeeded;
@@ -116,4 +191,5 @@
 }
 .articleDetail .container .content-side .categories1 h3 {
   padding-bottom: 20px;
+  text-decoration: underline;
 }

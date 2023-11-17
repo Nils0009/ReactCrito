@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import './NewsAndArticles.css'
 import NewsAndArticlesContent from './NewsAndArticlesContent'
 import { Link } from 'react-router-dom'
@@ -15,6 +14,10 @@ function NewsAndArticles() {
                 {
                     articles.map(article => (
                         <Link key={article.id} to={`/article/${article.id}`}>
+                                 <div className='article-news-content-date'>
+                                    <div>{new Date(article.published).toLocaleDateString('default', { day: 'numeric' })}</div>
+                                    <div>{new Date(article.published).toLocaleDateString('default', { month: 'short' })}</div> 
+                                </div>
                             <NewsAndArticlesContent pic={article.imageUrl}  category={article.category} title={article.title} text={article.content}/>
                         </Link>
                     ))

@@ -102,6 +102,9 @@
   align-items: center;
   padding-bottom: 100px;
 }
+.contact-main .container .contact-form #c-form label {
+  color: red;
+}
 .contact-main .container .contact-form #c-form #name,
 .contact-main .container .contact-form #c-form #email,
 .contact-main .container .contact-form #c-form #message,
@@ -114,6 +117,9 @@
 }
 .contact-main .container .contact-form #c-form button {
   margin-top: 25px;
+}
+.contact-main .container .contact-form #c-form .errorMessage {
+  color: red;
 }
 .contact-main .img-fluid {
   padding-top: 20px;

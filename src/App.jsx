@@ -3,14 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './views/Home'
 import News from './views/News'
 import Contact from './views/Contact'
-import NotFound from './views/NotFound'
+import Service from './views/Service'
 import Article from './views/Article'
 import ArticleDetail from './components/Main/News/ArticleDetail'
 import { ArticleProvider } from './contexts/ArticleContext'
-
-
-
-
 
 function App() {
 
@@ -24,7 +20,7 @@ return (
           <Route path='/contact' element={<Contact/>} />
           <Route path='/article/:id' element={<Article />} />
           <Route path='/article/:id' element={<ArticleDetail />} />
-          <Route path='*' element={<NotFound/>} />
+          <Route path='*' element={<Service/>} />
         </Routes>
       </ArticleProvider>
     </BrowserRouter>

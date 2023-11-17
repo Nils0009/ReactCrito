@@ -1,0 +1,16 @@
+.ContactMainFormSuccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.ContactMainFormSuccess h1 {
+  font-weight: 600;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ContactMainFormSuccess .btn-theme {
+  margin-bottom: 90px;
+  width: 200px;
+}
