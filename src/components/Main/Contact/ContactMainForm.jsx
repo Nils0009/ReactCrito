@@ -17,7 +17,7 @@ function ContactMainForm() {
       validationSchema: Yup.object({
         name: Yup.string()
           .required("Ett namn måste anges!")
-          .min(2, "Namnet måste innehålla minst två tecken!"),
+          .matches(/^[A-Za-zÀ-Öà-ö\s']{2,}$/, "Namnet uppfyller inte kraven, försök igen!"),
         email: Yup.string()
           .required("Du måste ange en E-postadress!")
           .matches(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, "E-postadressen innehåller fel!"),

@@ -7,6 +7,7 @@ import img_JustinWilloman from '../../../assets/Images/Justin-Willoman.png'
 import img_CassandraWarren from '../../../assets/Images/Cassandra-Warren.png'
 import img_AmandaTulling from '../../../assets/Images/Amanda-Tulling.png'
 import img_JackMcDogglas from '../../../assets/Images/Jack-McDogglas.png'
+import img_dots from '../../../assets/Images/dot.svg'
 import SectionTitle from '../../Generics/SectionTitle'
 import MeetTeamMembers from './MeetTeamMembers'
 import MeetTeamTestimonial from './MeetTeamTestimonial'
@@ -29,7 +30,11 @@ function MeetTeam() {
                 <MeetTeamMembers classname={"kimberly-h"} image={img_KimberlyHansen} alttext={"An image of a woman with long dark hair holding a newspaper"} title={"Kimberly Hansen"} text={"Senior Consultant"} />
                 <MeetTeamMembers classname={"justin-w"} image={img_JustinWilloman} alttext={"An image of a smiling man with dark hair and a black sweater"} title={"Justin Willoman"} text={"Senior Tech Consultant"} />
             </div>
-        
+
+            <div className='img_dot'>
+                <img src={img_dots}/>
+            </div>
+    
             <div className="testimonial">
                 <div className="testimonial-text">
                     <SectionTitle title="Testimonial" description="What Our Client Says"/>            

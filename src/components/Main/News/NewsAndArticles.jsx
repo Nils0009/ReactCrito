@@ -1,4 +1,5 @@
 import './NewsAndArticles.css'
+import img_pag from '../../../assets/Images/pag.png'
 import NewsAndArticlesContent from './NewsAndArticlesContent'
 import { Link } from 'react-router-dom'
 import { useArticles } from '../../../contexts/ArticleContext'
@@ -22,6 +23,9 @@ function NewsAndArticles() {
                         </Link>
                     ))
                 }         
+            </div>
+            <div className='img_pag'>
+                <img src={img_pag} />
             </div>
         </div>
     </section>

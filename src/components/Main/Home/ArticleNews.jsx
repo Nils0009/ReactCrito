@@ -1,5 +1,6 @@
 import React from 'react'
 import './ArticleNews.css'
+import img_dot from '../../../assets/Images/dot.svg'
 import ArticleNewsContent from './ArticleNewsContent'
 import MainBtn from '../../Generics/MainBtn'
 import SectionTitle from '../../Generics/SectionTitle'
@@ -30,6 +31,9 @@ function ArticleNews() {
                         </div>
                     ))
                 } 
+            </div>
+            <div className='img_dot'>
+                <img src={img_dot}/>
             </div>                      
         </div>
     </section>

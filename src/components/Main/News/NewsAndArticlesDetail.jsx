@@ -1,5 +1,6 @@
 import React from 'react'
 import './NewsAndArticlesDetail.css'
+import img_dot from '../../../assets/Images/dot.svg'
 import ArticleNewsContent from '../Home/ArticleNewsContent'
 import MainBtn from '../../Generics/MainBtn'
 import SectionTitle from '../../Generics/SectionTitle'
@@ -7,6 +8,7 @@ import { useArticles } from '../../../contexts/ArticleContext'
 
 function NewsAndArticlesDetail() {
     const { threeArticles } = useArticles()
+    
   return (
     <section className="NewsAndArticlesDetail">
         <div className="container">
@@ -27,7 +29,10 @@ function NewsAndArticlesDetail() {
                         </div>
                     ))
                 } 
-            </div>                      
+            </div>   
+            <div className='img_dot'>
+                <img src={img_dot}/>
+            </div>                   
         </div>
     </section>
   )
